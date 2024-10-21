@@ -37,7 +37,7 @@ def send_notification():
     send_mail(
         'Your Job Completed',
         'Your job has completed successfully.',
-        'info@creative..com',
+        'info@creative.com',
         ['admin@creative.com'],
         fail_silently=False,
     )
