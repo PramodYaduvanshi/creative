@@ -24,7 +24,6 @@ class APITestCase(TestCase):
     
     def test_trigger_bog(self):
         response = self.client.post('/trigger-job/')
-        print(response.data)
         self.assertEqual(response.status_code, 200)
 
     def test_session_expiry(self):
